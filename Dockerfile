@@ -1,0 +1,4 @@
+FROM openjdk:15
+EXPOSE 8084
+ADD target/customer-0.0.1-SNAPSHOT.jar customer-0.0.1-SNAPSHOT.jar 
+ENTRYPOINT ["java","-jar","/customer-0.0.1-SNAPSHOT.jar"]
